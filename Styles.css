@@ -1,0 +1,145 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: url(1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+
+/*Header */
+
+.header{
+	width: 100%;
+	z-index: 1000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.form{
+	padding-top: -35px;
+}
+
+
+
+/*Navigation*/
+
+.nav{
+	display: inline-block;
+	justify-content: space-between;
+	font-size: 17px;
+	padding-top: 15px;
+
+}
+.nav__link{
+	
+	color: white;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	position: relative;
+	vertical-align: top;
+	border-right: 1px solid orange;
+	
+}
+
+.nav__link:hover{
+	color: white;
+	background-color: orange;
+}
+
+
+.nav__link::after{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0%;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+	margin-top: 5px;
+
+}
+
+.nav__link:hover:after{
+	background: white;
+	opacity: 1;
+	width: 100%;
+	background: orange;
+}
+
+/* INTRO */
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.intro__inner{
+	display: flex;
+	width: 100%;
+	max-width: 450px;
+	height: 200px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 300px;
+	margin-left: 100px;
+
+	text-align: center;
+	font-size: 100px;
+	color: orange;
+	line-height: 1.7;
+	font-weight: 700;
+	text-shadow: -7px -5px black;
+	
+  }
+
+
+/*Footer*/
+.footer{
+	display: flex;
+	bottom: 0px;
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+}
+
+.footer__note{
+	padding-bottom: 10px;
+	padding-top: 25px;
+	color: grey;
+}
+
+
+
+
+
+/*PAGE ABOUT*/
