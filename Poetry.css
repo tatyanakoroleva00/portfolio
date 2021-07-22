@@ -1,0 +1,187 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: black;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+
+}
+
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+
+.header{
+	width: 100%;
+	z-index: 1000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+
+	
+}
+
+.change{
+	color: black;
+	font-weight: 700;
+	padding: 5px 15px;
+	background-color: #E0E0E0;
+	text-decoration: none;
+
+}
+
+
+.change:hover{
+	background-color: orange;
+
+}
+
+a.active__link{
+	pointer-events: none;
+	cursor: default;
+	
+}
+/*NAVIGATION*/
+
+.nav{
+	display: inline-block;
+	justify-content: space-between;
+	font-size: 17px;
+
+}
+.nav__link{
+	
+	color: white;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	position: relative;
+	vertical-align: top;
+	
+}
+
+
+.nav__link:hover{
+	color: white;
+	background-color: orange;
+}
+
+.active__link{
+	background-color: orange;
+	color: white;
+
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	position: relative;
+	vertical-align: top;
+}
+.active__link:after{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+	margin-top: 5px;
+	opacity: 1;
+	background-color: orange;
+}
+
+
+.nav__link::after{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0%;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+	margin-top: 5px;
+
+}
+
+.nav__link:hover:after{
+	background: white;
+	opacity: 1;
+	width: 100%;
+	background: orange;
+}
+
+
+/*MAIN */
+
+.Main__inner{
+	display: flex;
+	justify-content: row;
+}
+
+.left__navigation{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+
+.nav__item{
+	color: black;
+	font-size: 18px;
+	line-height: 2;
+}
+
+.verses{
+	width: 75%;
+	background-color: #E0E0E0;
+	display: flex;
+	justify-content: center;
+}
+
+.text{
+	color: black;
+	opacity: 1;
+}
+
+
+/*FOOTER*/
+
+.footer{
+	display: flex;
+	bottom: 0px;
+	width: 100%;
+	justify-content: center;
+	position: relative;
+
+}
+
+.footer__note{
+	padding-bottom: 10px;
+	padding-top: 25px;
+	color: grey;
+}
